@@ -4,14 +4,14 @@ Refer to run_analysis.R script that contains the R script to:
 
 ### Merges the training and the test sets to create one data set.
 * Uses rbind to merge the two sets as:
-  dataSet1 <- rbind(testSet, trainSet)
+  -dataSet1 <- rbind(testSet, trainSet)
 
 
 ### Extracts only the measurements on the mean and standard deviation for each measurement. 
 * Uses the features data to grep for variables having mean() or std() as part of the variable name and then passes to dataSet1 to select only the required variables 
   
-  mean.std <- grep("mean()|std()", as.character(features[,2]))
-  dataSet2 <- dataSet1[,mean.std]
+  -mean.std <- grep("mean()|std()", as.character(features[,2]))
+  -dataSet2 <- dataSet1[,mean.std]
 
 
 
