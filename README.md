@@ -1,8 +1,11 @@
-run_analysis.R script contains the R script to merge the training and test set.
+##README
 
-...{r}
-testSet <- read.table("./UCI HAR Dataset/test/X_test.txt",skip=0,header =FALSE)
-trainSet <- read.table("./UCI HAR Dataset/train/X_train.txt",skip=0,header =FALSE)
-dataSet1 <- rbind(testSet, trainSet)
+Refer to run_analysis.R script that contains the R script to:
 
-...
+* Merges the training and the test sets to create one data set.
+* Extracts only the measurements on the mean and standard deviation for each measurement. 
+* Uses descriptive activity names to name the activities in the data set
+* Appropriately labels the data set with descriptive variable names. 
+* From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+
